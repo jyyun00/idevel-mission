@@ -1,0 +1,22 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>출력결과</title>
+</head>
+<body>
+<script>
+    // 두 변의 길이의 합이 합변의 길이 보다 커야 성립
+    // a+b>c, b+c>a, a+c>b ==> true
+    function solution(a, b, c){
+        if(a + b <c || b + c < a || a + c < b) {
+            return  "NO";
+        }
+     return "YES";
+    }
+
+    console.log(solution(6, 7, 11))
+    console.log(solution(13, 33, 17))
+
+</script>
+</body>
+</html>
