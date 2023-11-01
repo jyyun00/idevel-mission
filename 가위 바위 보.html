@@ -9,14 +9,11 @@
         let answer=[];
 
         for(let i=0; i<a.length; i++) {
-            console.log(a[i]-b[i])
             if(a[i]-b[i]  === 1 || a[i]-b[i]  === -2) {
                 answer.push("A");
-            }
-            if(a[i]-b[i] === 2 || a[i]-b[i] === -1) {
+            } else if(a[i]-b[i] === 2 || a[i]-b[i] === -1) {
                 answer.push("B");
-            }
-            if(a[i] === b[i]) {
+            } else if(a[i] === b[i]) {
                 answer.push("D")
             }
         }
