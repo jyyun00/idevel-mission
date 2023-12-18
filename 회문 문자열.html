@@ -1,0 +1,21 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>출력결과</title>
+</head>
+<body>
+<script>
+    function solution(s){
+        let answer="YES";
+        // 소문자로 변경
+        const toLowerVal = s.toLowerCase();
+        answer = toLowerVal === toLowerVal.split("").reverse().join("") ? "YES" : "NO";
+
+        return answer;
+    }
+
+    let str="goooG";
+    console.log(solution(str));
+</script>
+</body>
+</html>
